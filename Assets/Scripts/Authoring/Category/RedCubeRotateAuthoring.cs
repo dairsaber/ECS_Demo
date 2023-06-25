@@ -1,4 +1,5 @@
 ﻿using Unity.Entities;
+using UnityEngine;
 
 namespace Authoring.Category
 {
@@ -6,7 +7,7 @@ namespace Authoring.Category
     {
     }
 
-    public class RedCubeRotateAuthoring : BaseCategoryAuthoring<RedCubeTag>
+    public class RedCubeRotateAuthoring : MonoBehaviour
     {
         public class Baker : Baker<RedCubeRotateAuthoring>
         {
