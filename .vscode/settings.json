@@ -33,6 +33,7 @@
         "**/*.VC.db": true,
         "**/*.fbx": true,
         "**/*.unity": true,
+        "**/SceneDependencyCache": true
     },
     "omnisharp.useModernNet": false,
     "cSpell.words": [
