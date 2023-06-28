@@ -1,0 +1,10 @@
+using SystemGroups;
+
+#ROOTNAMESPACEBEGIN#
+
+public partial class #SCRIPTNAME# : SceneSystemGroup
+{
+    protected override string AuthoringSceneName => "YourSceneName";
+}       
+
+#ROOTNAMESPACEEND#
