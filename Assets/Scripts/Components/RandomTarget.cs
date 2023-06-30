@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Components
 {
-    struct RandomTarget : IComponentData
+    public struct RandomTarget : IComponentData
     {
         public float3 targetPosition;
     }
