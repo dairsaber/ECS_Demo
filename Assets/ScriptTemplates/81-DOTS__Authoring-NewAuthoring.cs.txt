@@ -1,0 +1,27 @@
+using Unity.Entities;
+using UnityEngine;
+
+#ROOTNAMESPACEBEGIN#
+public struct #COMPONENTDATANAME#Data : IComponentData
+{
+#NOTRIM#
+}
+
+public class #SCRIPTNAME# : MonoBehaviour
+{
+
+}
+
+internal class #COMPONENTDATANAME#Baker : Baker<#SCRIPTNAME#>
+{
+    public override void Bake(#SCRIPTNAME# authoring)
+    {   
+        var entity = GetEntity(TransformUsageFlags.None);
+        var data = new #COMPONENTDATANAME#Data
+        {  
+        #NOTRIM#
+        };
+        AddComponent(entity, data);
+    }
+}
+#ROOTNAMESPACEEND#

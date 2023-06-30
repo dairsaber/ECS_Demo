@@ -1,27 +1,10 @@
-using Common;
 using Unity.Entities;
-using UnityEngine;
 using Random = Unity.Mathematics.Random;
 
-struct RandomSingleton : IComponentData
+namespace Components
 {
-    public Random random;
-}
-
-public class RandomSingletonAuthoring : Singleton<RandomSingletonAuthoring>
-{
-    public uint seed = 1;
-}
-
-internal class RandomSingletonBaker : Baker<RandomSingletonAuthoring>
-{
-    public override void Bake(RandomSingletonAuthoring authoring)
+    struct RandomSingleton : IComponentData
     {
-        var entity = GetEntity(TransformUsageFlags.None);
-        var data = new RandomSingleton
-        {
-            random = new Random(authoring.seed)
-        };
-        AddComponent(entity, data);
+        public Random random;
     }
 }

@@ -1,4 +1,5 @@
 using Authoring;
+using Components;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
@@ -11,20 +12,21 @@ namespace Jobs
     partial struct CubeRotateAndMoveEntityJob : IJobEntity
     {
         [ReadOnly] public float deltaTime;
-        [ReadOnly] public EntityCommandBuffer.ParallelWriter ecbParallel;
+        public EntityCommandBuffer.ParallelWriter ecbParallel;
 
 
-        void Execute([ChunkIndexInQuery] int chunkIndex, Entity entity, ref LocalTransform transform, in RandomTarget target,
+        void Execute([ChunkIndexInQuery] int chunkIndex, Entity entity, ref LocalTransform transform,
+            in RandomTarget target,
             in RotateAndMoveSpeedData rsd)
         {
             var distance = math.distance(transform.Position, target.targetPosition);
             if (distance < 0.02f)
             {
-                ecbParallel.DestroyEntity(chunkIndex,entity);
+                ecbParallel.DestroyEntity(chunkIndex, entity);
             }
             else
             {
-                var dir =  math.normalize(target.targetPosition - transform.Position);
+                var dir = math.normalize(target.targetPosition - transform.Position);
                 transform.Position += dir * rsd.moveSpeed * deltaTime;
                 transform = transform.RotateY(rsd.rotateSpeed * deltaTime);
             }
