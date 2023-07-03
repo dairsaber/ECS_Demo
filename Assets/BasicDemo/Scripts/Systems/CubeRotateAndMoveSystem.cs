@@ -1,10 +1,8 @@
-using Aspects;
-using Authoring;
-using SystemGroups;
+using BasicDemo;
 using Unity.Burst;
 using Unity.Entities;
 
-namespace Systems
+namespace BasicDemo
 {
     [BurstCompile]
     [RequireMatchingQueriesForUpdate]

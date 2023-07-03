@@ -1,9 +1,9 @@
-using Authoring;
+using BasicDemo;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Aspects
+namespace BasicDemo
 {
     public readonly partial struct RotateAndMoveAspect : IAspect
     {

@@ -2,7 +2,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Authoring
+namespace BasicDemo
 {
     public struct RotateData : IComponentData, IEnableableComponent
     {

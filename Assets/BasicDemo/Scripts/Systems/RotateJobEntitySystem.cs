@@ -1,10 +1,9 @@
-using Authoring;
-using SystemGroups;
+using BasicDemo;
 using Unity.Burst;
 using Unity.Entities;
 using Unity.Transforms;
 
-namespace Systems
+namespace BasicDemo
 {
     [BurstCompile]
     internal partial struct RotateJob : IJobEntity

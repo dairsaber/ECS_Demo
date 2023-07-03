@@ -1,5 +1,5 @@
-﻿using Authoring;
-using Components;
+﻿using BasicDemo;
+using BaiscDemo;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
@@ -7,7 +7,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Jobs
+namespace BasicDemo
 {
     [BurstCompile]
     public struct GenerateEnabledComponentJob : IJobFor

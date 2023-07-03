@@ -1,6 +1,7 @@
-﻿using Unity.Entities;
+﻿using Common;
+using Unity.Entities;
 
-namespace SystemGroups
+namespace BasicDemo
 {
     public partial class RotateSystemGroup : ComponentSystemGroup
     {

@@ -1,11 +1,11 @@
-﻿using Authoring;
-using Components;
+﻿using BasicDemo;
+using BaiscDemo;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Aspects
+namespace BasicDemo
 {
     public readonly partial struct MarchingAspect : IAspect
     {

@@ -1,7 +1,7 @@
 using Unity.Entities;
 using UnityEngine;
 
-namespace Authoring
+namespace BasicDemo
 {
     public struct ScaleData : IComponentData, IEnableableComponent
     {

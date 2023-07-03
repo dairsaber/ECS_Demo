@@ -4,7 +4,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Jobs
+namespace BasicDemo
 {
     [BurstCompile]
     partial struct WaveCubeEntityJob : IJobEntity

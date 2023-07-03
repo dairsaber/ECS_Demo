@@ -2,7 +2,7 @@ using System.Security.Cryptography.X509Certificates;
 using Unity.Entities;
 using UnityEngine;
 
-namespace Components
+namespace BaiscDemo
 {
     struct WaveCubeGenerator : IComponentData
     {

@@ -1,6 +1,4 @@
-using Common;
 using Unity.Entities;
-using UnityEngine;
 using Random = Unity.Mathematics.Random;
 
 namespace Common

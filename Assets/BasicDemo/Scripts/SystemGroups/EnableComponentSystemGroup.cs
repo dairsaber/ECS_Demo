@@ -1,4 +1,5 @@
-namespace SystemGroups
+using Common;
+namespace BasicDemo
 {
     public partial class EnableComponentSystemGroup : SceneSystemGroup
     {

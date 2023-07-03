@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using UnityEngine;
 
-namespace Authoring
+namespace BasicDemo
 {
     struct NextPathIndex : IComponentData
     {

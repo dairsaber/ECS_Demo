@@ -1,12 +1,10 @@
-using Authoring;
-using Jobs;
-using SystemGroups;
+using BasicDemo;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
 
-namespace Systems
+namespace BasicDemo
 {
     [BurstCompile]
     [RequireMatchingQueriesForUpdate]

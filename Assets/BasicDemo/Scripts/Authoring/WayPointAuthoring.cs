@@ -3,7 +3,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Authoring
+namespace BasicDemo
 {
     [InternalBufferCapacity(8)]
     struct WayPoint : IBufferElementData

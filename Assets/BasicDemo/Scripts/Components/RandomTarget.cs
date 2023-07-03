@@ -2,7 +2,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Components
+namespace BaiscDemo
 {
     public struct RandomTarget : IComponentData
     {

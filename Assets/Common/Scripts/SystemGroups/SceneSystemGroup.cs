@@ -3,7 +3,7 @@ using Unity.Scenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SystemGroups
+namespace Common
 {
     public abstract partial class SceneSystemGroup : ComponentSystemGroup
     {

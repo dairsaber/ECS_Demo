@@ -1,10 +1,10 @@
 ﻿using System;
-using Aspects;
+using BasicDemo;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
 
-namespace Jobs
+namespace BasicDemo
 {
     [BurstCompile]
     public partial struct MarchingEntityJob : IJobEntity

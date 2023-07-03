@@ -1,8 +1,8 @@
-﻿using Components;
+﻿using BaiscDemo;
 using Unity.Entities;
 using UnityEngine;
 
-namespace Authoring
+namespace BasicDemo
 {
     public class RandomCubeGeneratorAuthoring : MonoBehaviour
     {

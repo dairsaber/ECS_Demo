@@ -1,9 +1,9 @@
 using Common;
-using Components;
+using BaiscDemo;
 using Unity.Entities;
 using UnityEngine;
 
-namespace Authoring
+namespace BasicDemo
 {
     public class WaveCubeAuthoring : Singleton<WaveCubeAuthoring>
     {

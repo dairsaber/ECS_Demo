@@ -1,6 +1,7 @@
 
+using Common;
 
-namespace SystemGroups
+namespace BasicDemo
 {
     public partial class RandomGenerateCubeSystemGroup : SceneSystemGroup
     {

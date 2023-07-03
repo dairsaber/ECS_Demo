@@ -1,11 +1,10 @@
-﻿using Authoring;
-using Authoring.Category;
-using SystemGroups;
+﻿using BasicDemo.Category;
+using BasicDemo;
 using Unity.Burst;
 using Unity.Entities;
 using Unity.Transforms;
 
-namespace Systems
+namespace BasicDemo
 {
     [BurstCompile]
     [UpdateInGroup(typeof(CubeRotateSystemGroup))]

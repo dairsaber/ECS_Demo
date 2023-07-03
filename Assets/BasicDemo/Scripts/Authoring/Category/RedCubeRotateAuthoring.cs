@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using UnityEngine;
 
-namespace Authoring.Category
+namespace BasicDemo.Category
 {
     public struct RedCubeTag : IComponentData
     {
