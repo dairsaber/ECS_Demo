@@ -2,7 +2,7 @@ using Unity.Entities;
 
 namespace AdvanceDemo.AntPhermones
 {
-    public struct ColorID : ISharedComponentData
+    public struct ColonyID : ISharedComponentData
     {
         public int id;
     }

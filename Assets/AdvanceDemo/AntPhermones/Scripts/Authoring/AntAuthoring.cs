@@ -47,7 +47,7 @@ namespace AdvanceDemo.AntPhermone
                 AddComponent(entity, authoring.position);
                 AddComponent(entity, authoring.speed);
                 AddComponent(entity, authoring.direction);
-                AddSharedComponent(entity, new ColorID { id = -1 });
+                AddSharedComponent(entity, new ColonyID { id = -1 });
                 AddComponent(entity, new URPMaterialPropertyBaseColor { Value = new float4(0, 0, 1, 1) });
             }
         }
